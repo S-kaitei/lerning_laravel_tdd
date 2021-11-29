@@ -14,7 +14,7 @@ class ReserveControllerTest extends TestCase
     use RefreshDatabase;
     use CreatesUser;
 
-    public function testInvoke()
+    public function testInvoke_正常系()
     {
         $lesson = factory(Lesson::class)->create();
         $user = $this->createUser();
